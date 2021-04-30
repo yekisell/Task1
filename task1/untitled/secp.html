@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--https://i.ibb.co/g9dKkHS/obradim.png-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!--script src="https://use.fontawesome.com/d131838fb1.js"></script-->
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html,
+        body,
+        header,
+        .carousel {
+            height: 60vh;
+        }
+        @media (max-width: 740px)
+        {
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar" style="background-color: #f2ffff !important; height: 80px">
+    <div class="container">
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a href="#" class="waves-effect">
+                    <i class="fa fa-ship" style="color:#333319 !important;"></i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="navbar-brand waves-effect mb-3 mt-1">
+            <strong class="obra-text logo ml-3 mr-3">Vocant Mare
+            </strong>
+        </a>
+        <button class="navbar-toggler" type="button"
+                data-toggler="collapse" data-mdb-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navitem active">
+                    <a href="#" class="nav-link waves-effect">Home</a>
+                </li>
+                <li class="navitem">
+                    <a href="#" class="nav-link waves-effect">Contact us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+
+                <li class="nav-item ml-1">
+                    <a href="#" class="waves-effect">
+                        <i class="fa fa-user-alt" aria-hidden="true" style="color:#333319 !important;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="mt-5 pt-2  pb-3">
+    <div class="container dark-grey-text mt-5">
+        <div class="row wow fadeIn">
+            <strong>Do you want to find a job quickly? Follow these steps and we'll write on your email.</strong>
+            <div class="col-md-6 mb-4">
+                <img src="img/map.PNG" alt="map" class="img-fluid">
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4">
+                    <div class="mb-3">
+                        1. Write down your country
+                        <form class="form-inline">
+                            <div class="md-form my-0" >
+                                <input type="text" class="form-control mr-sm-2"
+                                       placeholder="Country..." aria-label="Country...">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mb-3">
+                        2. Write down your speciality
+                        <form class="form-inline">
+                            <div class="md-form my-0" >
+                                <input type="text" class="form-control mr-sm-2"
+                                       placeholder="Speciality..." aria-label="Speciality...">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            3. Write down your email
+            <form class="form-inline">
+                <div class="md-form my-0" >
+                    <input type="text" class="form-control mr-sm-2"
+                           placeholder="Email..." aria-label="Email...">
+                </div>
+            </form>
+        </div>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Send
+        </button>
+    </div>
+
+</main>
+
+
+<footer class="page-footer text-center font-small wow fadeIn">
+    <div class="pt-0 pb-2">
+
+        <h5>Aleksey Yumashev</h5>
+        <strong>probablyfiend@gmail.com</strong>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+        Clipboard_CopyTo("T9TTVSQB");
+        var div = document.getElementById('code-success');
+        div.style.display = 'block';
+        setTimeout(function () {
+            document.getElementById('code-success').style.display = 'none';
+        }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+        var tempInput = document.createElement("input");
+        tempInput.value = value;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
+</script>
+</body>
+</html>
